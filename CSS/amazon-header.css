@@ -145,5 +145,36 @@
     cursor: pointer;
 }
 
+.hidden {
+    display: none !important;
+}
+  
+@media (max-width: 575px) {
+    .right-sec.active {
+        display: flex !important;
+        flex-direction: column;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top: 60px; 
+        right: 0;
+        background-color: rgb(18, 24, 28);
+        width: 100%;
+        padding: 10px 15px;
+        gap: 10px;
+        z-index: 10;
+    }
+
+    .checkout-link {
+        padding-top: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+}
+
+
+
+
+
+
 
 
