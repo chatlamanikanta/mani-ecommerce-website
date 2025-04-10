@@ -17,6 +17,13 @@ else{
     document.querySelector('.js-cart-quantity').innerHTML=cartValue;
 }
 
+const hamburger = document.querySelector('.js-ham-menu');
+const rightSection = document.querySelector('.right-sec');
+
+hamburger.addEventListener('click', () => {
+    rightSection.classList.toggle('active');
+});
+
 let productHTML='';
 products.forEach((product)=>{
     productHTML+=`<div class="product-container">
