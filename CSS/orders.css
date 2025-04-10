@@ -1,0 +1,166 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main{
+    margin-top: 90px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-heading{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.orders-block{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(213, 217, 217);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin-bottom: 50px;
+}
+.header-border{
+    border: 1px solid rgb(213, 217, 217);
+}
+.order-header{
+    background-color: rgb(240, 242, 242);
+    padding: 20px 25px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.order-block{
+    margin-bottom: 20px;
+}
+.order-header-sec{
+    display: flex;
+    flex-direction: row;
+}
+.order-placed{
+    font-weight: bold;
+    font-size: 16px;
+    width: 140px;
+}
+.total-amount{
+    width: 310px;
+}
+@media(max-width:575px){
+    .order-header-sec{
+        display: flex;
+        flex-direction: column;
+    }
+    .order-placed{
+        width: 110px;
+    }
+    .order-date,.order-id-block,.total-amount{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5px;
+    }
+    .order-header{
+        padding: 15px 20px;
+    }
+
+}
+
+.order-details{
+    display: grid;
+    grid-template-columns: 140px 3fr;
+    padding-top: 25px;
+    margin-top: 20px;
+}
+.details-left-sec{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 37px;
+    padding-left: 25px;
+}
+.product-img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.product-name{
+    font-weight: bold;
+    width: 310px;
+    margin-bottom: 3px;
+}
+.arriving-details,.quantity-details{
+    margin-bottom: 3px;
+}
+.buy-again-button{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 226, 8);    
+    margin-top: 8px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 1px 1px 5px 1px rgb(173, 170, 170);
+    cursor: pointer;
+}
+.buy-inner-block{
+    display: flex;
+}
+.buy-again-success{
+    display: none;
+    width: 119px;
+    height: 34px;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+.added-button .buy-inner-block{
+    display: none;
+}
+.added-button .buy-again-success{
+    display: flex;
+}
+.buy-img{
+    width: 20px;
+    height: 20px;
+    margin-top: 7px;
+    margin-left: 6px;
+}
+
+.buy-again-label{
+    font-size: 15px;
+    padding: 8px;
+}
+.track-button{
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    height: 35px;
+    background-color: white;
+    box-shadow: 1px 1px 2px 1px rgb(173, 170, 170);
+    font-size: 15px;
+    cursor: pointer;
+}
+@media(max-width:800px){
+    .details-left-sec{
+        grid-template-columns: 1fr 1fr;
+    }
+    .track-button{
+        width: 130px;
+        margin-top: 0px;
+    }
+    .tracking-button-block{
+        grid-column: 2;
+    }
+    .buy-again-button{
+        margin-bottom: 20px;
+    }
+    .outer-border{
+        padding-bottom: 50px;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,136 @@
+.main{
+    margin-top: 60px;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+@media (max-width:2000px){
+    .products{
+        grid-template-columns: repeat(7,1fr);
+    }
+}
+@media (max-width:1600px){
+    .products{
+        grid-template-columns: repeat(6,1fr);
+    }
+}
+@media (max-width:1300px){
+    .products{
+        grid-template-columns: repeat(5,1fr);
+    }
+}
+@media (max-width:1000px){
+    .products{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media (max-width:800px){
+    .products{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (max-width:575px){
+    .products{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:450px){
+    .products{
+        grid-template-columns: 1fr;
+    }
+}
+.product-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    border-right: 1px solid rgb(231, 231, 231);
+    border-bottom: 1px solid rgb(231, 231, 231);
+}
+.product-image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    margin-bottom: 20px;
+}
+.product-image{
+    max-width: 100%;
+    max-height: 100%;
+}
+.product-name{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.product-rating-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.product-rating{
+    width: 100px;
+    margin-right: 7px;
+}
+.product-rating-number{
+    color: rgb(24, 123, 228);
+    cursor: pointer;
+    margin-top: 3px;
+}
+.product-price{
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.quantity-selector {
+    border: 2px solid #ccc; 
+    padding: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+.quantity-selector:focus {
+    border-color: #007bff;
+}
+.product-spacer{
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    color: green;
+    margin-bottom: 10px;
+    opacity: 0;
+    font-size: 17px;
+}
+.space-image{
+    width: 20px;
+}
+.message-visible{
+    opacity:1;
+}
+.add-to-cart-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add-to-cart-button{
+    padding: 7px;
+    border-radius: 50px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: rgb(235, 181, 57);
+    border: none;
+    height: 30px;
+}
+.add-to-cart-button:hover{
+    background-color: rgb(238, 173, 20);
+}
+
+
+
+
+

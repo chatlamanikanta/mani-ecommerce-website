@@ -1,0 +1,31 @@
+.subscribe{
+    border: none;
+    background-color: hsl(0, 93%, 49%);
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px 10px 15px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.is-subscribed{
+    background-color: black;
+    color: white;
+    
+}
+body{
+    font-family: Arial;
+}
+.input{
+    padding: 8px;
+    border: 1px solid black;
+}
+.calculate{
+    padding: 8px;
+    background-color: green;
+    border: none;
+    color: white;    
+}
+.inner{
+    color: red;
+}

@@ -1,0 +1,149 @@
+.header{
+    background-color: rgb(18, 24, 28);
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    height: 60px;
+}
+.left-sec{
+    width: 180px;
+}
+@media (max-width: 800px) {
+    .left-sec {
+      width: unset;
+    }
+}
+.header-link {
+    display: inline-block;
+    padding: 6px;
+    cursor: pointer;
+    border: 1px solid black;
+    text-decoration: none;
+}
+.header-link:hover {
+    border: 1px solid white;
+}
+
+.logo {
+    width: 100px;
+    margin-top: 5px;
+}
+
+.mobile-logo {
+    display: none ;
+} 
+
+.extra-right-sec{
+    display: none;
+}
+
+@media (max-width:575px){
+    .logo{
+        display: none;
+    }
+    .mobile-logo {
+        display: block;
+        height: 35px;
+        margin-top: 5px;
+    }
+    .right-sec{
+        display:none !important;
+    }
+    .extra-right-sec{
+        display: initial;
+    }
+
+}
+.middle-sec{
+    flex: 1;
+    max-width: 800px;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.search-bar{
+    flex: 1;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-left: 10px;
+    font-size: 16px;
+    height: 38px;
+    width: 0;
+}
+.search-button{
+    background-color: rgb(254, 189, 105);
+    width: 45px;
+    height: 40px;
+    border: none;
+    flex-shrink: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+.search-icon{
+    height: 22px;
+    margin-top: 2px;
+    margin-left: 2px;
+} 
+.right-sec{
+    flex-shrink: 0;
+    width: 180px;
+    display: flex;
+    justify-content: end;
+}
+.orders-link{
+    color: white;
+}
+.returns-text{
+    display: block;
+    font-size: 15px;
+}
+.orders-text{
+    display: block;
+    font-size: 15px;
+    font-weight:700;
+}
+.checkout-link{
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+.cart-icon{
+    width: 50px;
+}
+.cart-text{
+    font-weight:700;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.cart-quantity{
+    color: rgb(255, 147, 14);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-size: 16px;
+    font-weight: 700;
+    top: 4px;
+    left: 29.7px;
+    text-align: center;
+    width: 26px;
+}
+.hamburgur-menu{
+    cursor: pointer;
+}
+
+
+

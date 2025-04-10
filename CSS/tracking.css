@@ -1,0 +1,51 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.tracking-body{
+    margin-top: 90px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.all-orders-button{
+    padding: 8px 0 8px 0;
+    width: 135px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    cursor: pointer;
+    background-color: #f6de0b;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.053);
+    margin-top: 10px;
+}
+.arrived-delivered{
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 13px;
+}
+.progress-labels-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.delivered-label{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(4, 167, 4);
+}
+@media(max-width:575px){
+    .progress-labels-container, .delivered-label{
+        font-size: 14px;
+    }
+}
+@media(max-width:330px){
+    .progress-labels-container{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="CSS/checkout-header.css">
+    <link rel="stylesheet" href="CSS/checkout.css">
+</head>
+<body>
+    <div class="checkout-header">
+        <div class="header-content">
+            <div class="checkout-left-section">
+                <a href="amazon1.html">
+                    <img class="comp-logo" src="img/amazon-logo.png">
+                    <img class="mobile-logo" src="img/amazon-mobile-logo.png">
+                </a>
+            </div>
+            <div class="checkout-middle-section">
+                Checkout( <a href="amazon1.html" class="numbers js-header-number ">
+                    3 Items 
+                </a>)
+            </div>
+            <div class="lock-icon">
+                <img src="img/checkout-lock-icon.png">
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="page-title">Review your Order</div>
+        <div class="checkout-grid">
+            <div class="js-order-summary outer-order-summary"></div>
+            <div class="payment-summary js-payment-summary">
+                
+            </div>
+        </div>
+        <div class="empty-sec-block js-empty-block">
+            <div class="empty-title">Your Cart is Empty</div>
+            <a href="amazon1.html">
+                <button class="empty-block-button">View Products</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- These external libraries create naming conflicts.
+    So,instead of this use ESM(Ecma Script Module) to avoid naming conflicts.
+    ESM is a special module which is used to combine DayJS and JS.
+    Ecma is nothing but another name of JavaScript. -->
+
+
+    <!-- <script src="https://unpkg.com/supersimpledev@1.0.1/hello.js"></script> -->
+    <!-- <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script> -->
+    <script type="module" src="Scripts/data/checkout.js"></script>
+    <!-- <script type="module" src="Scripts/data/backend-practice.js"></script> -->
+</body>
+</html>

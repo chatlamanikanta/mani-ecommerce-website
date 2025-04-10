@@ -1,0 +1,268 @@
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main{
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 100px;
+}
+.empty-selection{
+    display: initial;
+}
+.view-products{
+    padding: 8px 0 8px 0;
+    width: 135px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    cursor: pointer;
+    background-color: #f6de0b;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.053);
+    margin-top: 10px;
+}
+.page-title{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.checkout-grid{
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    align-items: start;
+    column-gap: 20px;
+    font-size: 17px;
+}
+.empty-title{
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+.empty-block-button{
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    cursor: pointer;
+    background-color: #f6de0b;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.053);
+    margin-bottom: 7px;
+    padding: 8px;
+    width: 130px;
+}
+
+.item-container{
+    border: 1px solid rgb(175, 168, 168);
+    border-radius: 4px;
+    padding: 18px;
+}
+.delivery-date{
+    color: rgb(0, 128, 0);
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 4px;
+    margin-bottom: 22px;
+}
+.cart-item-grid{
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr;
+    column-gap: 20px;
+}
+.product-image{
+    width: 100px;
+}
+.product-name{
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.order-summary{
+    border: 1px solid rgba(0, 0, 0, 0.361);
+    padding: 10px;
+    padding-left: 30px;
+    padding-bottom: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.product-price{
+    color: rgb(161, 49, 49);
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.update-button,.delete-button{
+    color: rgb(20, 163, 219);
+    cursor: pointer;
+}
+.update-button:active{
+    color: green;
+}
+.delete-button:active{
+    color: red;
+}
+
+.product-quantity,.delivery-details{
+    width: 200px;
+}
+
+.delivery-title{
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.radio-input-class{
+    cursor: pointer;
+    margin-right: 4px;
+}
+.radio-label1{
+    font-weight: 700;
+    color: rgb(0, 128, 0);
+    font-size: 15px;
+    cursor: pointer;
+}
+.radio-block1{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.radio-down1{
+    margin-left: 30px;
+    color: rgba(0, 0, 0, 0.406);
+    width: 120px;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.payment-summary{
+    border: 1px solid rgba(0, 0, 0, 0.361);
+    border-radius: 5px;
+    padding: 8px;
+    padding-left: 15px;
+    padding-bottom: auto;
+}
+.payment-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.916);
+    margin-bottom: 10px;
+}
+.items-block{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding-right:10px;
+    margin-bottom: 10px;
+}
+.subtotal-row{
+    padding-top: 9px;
+}
+.items-price{
+    border-top: 1px solid rgba(0, 0, 0, 0.24);
+    padding-top: 9px;
+}
+hr.new1{
+    border-top: 1px dotted rgba(0, 0, 0, 0.21);  
+    margin-bottom: 20px;
+}
+.total-order-block{
+    color: brown;
+    font-weight: bold;
+    font-size: 22px;
+}
+.order-buttons{
+    margin: 30px 0 20px 0;
+}
+
+.order-button{
+    padding: 10px 0 10px 0;
+    width: 98.5%;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    cursor: pointer;
+    background-color: #f6de0b;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.053);
+}
+@media (max-width: 1000px) {
+    .delivery-details {
+      /* grid-column: 1 means this element will be placed
+         in column 1 in the grid. (Normally, the column that
+         an element is placed in is determined by the order
+         of the elements in the HTML. grid-column overrides
+         this default ordering).
+         
+         / span 2 means this element will take up 2 columns
+         in the grid (Normally, each element takes up 1
+         column in the grid). */
+        
+      grid-column: 1 / span 2;
+    }
+    .payment-summary{
+        grid-row: 1;
+        margin-bottom: 20px;
+    }
+    .non-empty-block{
+        grid-row: 2;
+    }
+}
+@media (max-width: 1000px) {
+    .main {
+      max-width: 500px;
+
+    }
+  
+    .checkout-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .cart-item-grid {
+        grid-template-columns: 100px 1fr;
+        row-gap: 30px;
+    }
+
+}
+@media (max-width:400px){
+    .main{
+        max-width: 100px;
+        margin-right: 300px;
+    }
+    .page-title{
+        width: 200px;
+    }
+}
+input{
+    width: 15px;
+    height: 15px;
+}
+.save-button{
+    color: rgb(20, 163, 219);
+    cursor: pointer;
+}
+.input-class{
+    display: none;
+    width: 30px;
+}
+
+.save-button,.empty-sec-block{
+    display:none;
+}
+.non-empty-block{
+    display: block;
+}
+.is-editing-quantity .input-class{
+    display: initial;
+}
+.is-editing-quantity .quantity{
+    display: none;
+}
+.is-editing-quantity .update-button{
+    display: none;
+}
+.is-editing-quantity .save-button{
+    display: initial;
+}
+
+
+
