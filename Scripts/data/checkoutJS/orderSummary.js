@@ -28,7 +28,7 @@ export function renderOrderSummary(){
     emptySec=`
         <div class="empty-selection js-empty-selection">
             <div>Your Cart is Empty</div>
-            <a href="../../mani-ecommerce-website/index.html">
+            <a href="../../index.html">
                 <button class="view-products">View Products</button>
             </a>
         </div>
