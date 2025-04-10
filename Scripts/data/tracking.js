@@ -70,6 +70,12 @@ function trackingOrder(){
 
 }
 trackingOrder();
+const hamburger = document.querySelector('.js-ham-menu');
+const rightSection = document.querySelector('.right-sec');
+
+hamburger.addEventListener('click', () => {
+    rightSection.classList.toggle('active');
+});
 
 function updateCart(){
     let total=0;
